@@ -1,0 +1,26 @@
+{
+  "name": "hello-solana",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "make -C contracts",
+    "deploy": "solana program deploy /home/coder/hello-solana/build/SimpleStorage.so",
+    "blockchain": "solana-test-validator",
+    "logging": "solana logs --url localhost",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.31.0",
+    "borsh": "^0.6.0",
+    "yaml": "^1.10.2"
+  }
+}
